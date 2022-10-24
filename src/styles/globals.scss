@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #fff;
+  padding: 16px;
+  box-shadow: 2px 2px 6px 1px gray;
+
+  border-radius: 6px;
+}
+
+.header {
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+}
+
+.body {
+  padding: 16px;
+  position: relative;
+
+  // .icon {
+  //   height: 200px;
+  //   width: 200px;
+  //   padding: 80px;
+  //   position: absolute;
+  //   top: 16px;
+  //   right: 16px;
+  //   cursor: pointer;
+  // }
+}
+
+.footer {
+  border-top: 1px solid gray;
+  padding-top: 8px;
+
+  display: flex;
+  justify-content: end;
+  padding-top: 16px;
+
+  gap: 8px;
+
+  input {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    background: red;
+    height: 69px;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  button {
+    overflow: hidden;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
