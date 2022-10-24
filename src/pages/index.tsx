@@ -13,9 +13,10 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex min-h-screen flex-col items-center justify-center">
-        <Picture />
-
-        <div className="text-xl uppercase">Carlinhos Cenachi</div>
+        <div className="bg-white p-4 rounded-lg ">
+          <Picture />
+          <div className="text-xl uppercase">Carlinhos Cenachi</div>
+        </div>
       </main>
     </>
   );
